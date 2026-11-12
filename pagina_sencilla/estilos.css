@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background: #f4f4f4;
+  color: #222;
+}
+main {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+}
+label, input {
+  display: block;
+  margin-top: 10px;
+}
+input {
+  width: 95%;
+  padding: 8px;
+}
+button {
+  margin-top: 15px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: left;
+}
+.final {
+  margin-top: 30px;
+  font-weight: bold;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de productos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main>
+    <h1>Control de productos</h1>
+
+    <h2>Datos del producto</h2>
+    <form id="formulario">
+      <input type="hidden" id="indice">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" min="0" required>
+
+      <label for="categoria">Categoría:</label>
+      <select id="categoria">
+        <option value="General">General</option>
+        <option value="Papelería">Papelería</option>
+        <option value="Alimentos">Alimentos</option>
+        <option value="Limpieza">Limpieza</option>
+        <option value="Otros">Otros</option>
+      </select>
+
+      <button type="submit" id="guardar">Guardar producto</button>
+      <button type="button" id="cancelar">Cancelar edición</button>
+    </form>
+
+    <h2>Resumen</h2>
+    <p id="resumen">Productos: 0 | Unidades: 0</p>
+
+    <h2>Buscar productos</h2>
+    <label for="busqueda">Nombre:</label>
+    <input type="search" id="busqueda" placeholder="Escribe para buscar">
+
+    <label for="filtro">Categoría:</label>
+    <select id="filtro">
+      <option value="Todas">Todas</option>
+      <option value="General">General</option>
+      <option value="Papelería">Papelería</option>
+      <option value="Alimentos">Alimentos</option>
+      <option value="Limpieza">Limpieza</option>
+      <option value="Otros">Otros</option>
+    </select>
+
+    <h2>Lista de productos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th><th>Cantidad</th><th>Categoría</th><th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="lista"></tbody>
+    </table>
+
+    <p class="final">Ejemplo basado en el concepto YAGNI</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
